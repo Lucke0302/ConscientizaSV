@@ -1,0 +1,85 @@
+body{
+    margin: 0 auto;
+    padding: 0;
+    /* background: linear-gradient(
+        90deg,
+        #008080 0%,
+        #008080 50%,
+        white 50%,
+        white 100%
+      ); */
+    text-align: center;
+    font-family: 'Century Gothic';
+}
+#btn{
+    background-color: white;
+    color: #008080;
+    border-radius: 6px;
+    border-color: transparent;
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border-width: 1px;    
+}
+/*Estilização dos parágrafos que funcionam como Heading Tags,
+com tamanho da fonte aumentado e cor da fonte*/
+#h1{
+    font-size: 8vmin;
+    color: white;
+}
+#h2{
+    font-size: 8vmin;
+    color: #008080;
+}
+/*Estilização dos parágrafos normais, com tamanho da fonte um pouco
+aumentado e cor da fonte*/
+#p1{
+    font-size: 4vmin;
+    color: white;
+}
+#segunda{
+    margin-top: 20%;
+}
+/*Estilização da div da esquerda, onde se encontram apenas textos*/
+#div1
+{
+    height: 100vh;
+    background-color: #008080;
+    width: 50%;
+    float: left;
+    padding-top: 25vh;
+}
+/*Estilização da div da direita, inde se encontram alguns textos
+e os formulários*/
+#div2
+{
+    padding-top: 25vh;
+    background-color: white;
+    width: 50%;
+    float: right;
+    padding-left: 5vmin;
+    padding-right: 5vmin;
+}
+@media (max-width: 600px){
+    #div1, #div2{
+        width: 100vw;
+    }
+    #div1{
+        margin-top: 5vmin;
+        padding-bottom: 5%;
+    }
+    #div2{
+        height: 50vh;
+    }
+    #p1, #p2{
+        font-size: 1.3em;
+    }
+    body{
+    background: linear-gradient(
+        180deg,
+        #008080 0%,
+        #008080 50%,
+        white 50%,
+        white 100%
+      );
+    }
+}

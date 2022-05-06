@@ -1,0 +1,86 @@
+/*Estilização do corpo da página, margem centralizando os elementos
+de forma horizontal, padding, imagem de fundo, tamanho da imagem,
+attachment, dizendo que a imagem acompanha o rolamento da página
+alinhamento do texto centralizado, tipo de fonte e padding*/
+body{
+    margin: 0 auto;
+    padding: 0;
+    /* background: linear-gradient(
+        90deg,
+        #008080 0%,
+        #008080 50%,
+        white 50%,
+        white 100%
+      ); */
+    text-align: center;
+    font-family: 'Century Gothic';
+}
+/*Estilização dos parágrafos que funcionam como Heading Tags,
+com tamanho da fonte aumentado e cor da fonte*/
+#h1{
+    font-size: 8vmin;
+    color: white;
+}
+#h2{
+    font-size: 8vmin;
+    color: #008080;
+}
+/*Estilização dos parágrafos normais, com tamanho da fonte um pouco
+aumentado e cor da fonte*/
+#p1{
+    font-size: 4vmin;
+    color: white;
+}
+/*Estilização da div da esquerda, onde se encontram apenas textos*/
+#div1
+{
+    padding-top: 30vh;
+    background-color: #008080;
+    height: 100vh;
+    width: 50%;
+    float: left;
+}
+/*Estilização da div da direita, inde se encontram alguns textos
+e os formulários*/
+#div2
+{
+    padding-top: 25vh;
+    background-color: white;
+    height: 100vh;
+    width: 50%;
+    float: right;
+    padding-left: 5vmin;
+    padding-right: 5vmin;
+}
+#segunda{
+    margin-top: 25%;
+}
+@media (max-width: 600px){
+    #div1, #div2{
+        width: 100vw;
+        height: 50vh;
+    }
+    #div2{
+        margin-top: 10vmin;
+    }
+    #p1, #p2{
+        font-size: 1.3em;
+    }
+    body{
+    background: linear-gradient(
+        180deg,
+        #008080 0%,
+        #008080 50%,
+        white 50%,
+        white 120%
+      );
+    }
+}
+.icon ion-icon{
+    position: absolute;
+    margin-left: -48vw;
+    margin-top: 2vh;
+}
+ion-icon{    
+    color: white;
+} 

@@ -1,0 +1,36 @@
+body{
+    font-size: 3vmin;
+    padding-left: 5%;
+}
+table{
+    color: #008080;
+    font-size: 4vmin;
+    border-top: solid 2px #008080;
+    border-collapse: collapse;
+    border-radius: 4px;
+    width: max-content;
+}
+td, tr{
+    padding: 1.5vmin;
+    border-right: solid 2px #008080;
+}
+#enviar{
+    background-color: dodgerblue;
+    color: white;
+    border-radius: 8px;
+    border-color: transparent;
+}
+
+#texto{
+    border-color: #008080;
+    border-width: 2px;
+    border-radius: 8px;
+    background-color: transparent;
+}
+form{
+    width: max-content;
+    margin-bottom: 4%;
+}
+select, #enviar{
+    font-size: 3vmin;
+}

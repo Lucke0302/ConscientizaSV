@@ -1,0 +1,134 @@
+/*Estilização do corpo da página, margem centralizando os elementos
+de forma horizontal, padding, imagem de fundo, tamanho da imagem,
+attachment, dizendo que a imagem acompanha o rolamento da página
+alinhamento do texto centralizado, tipo de fonte e padding*/
+body{
+    margin: 0 auto;
+    padding: 0;
+    font-size: 3vmin;
+    background: linear-gradient(
+        90deg,
+        #008080 0%,
+        #008080 50%,
+        white 50%,
+        white 100%
+      );
+    text-align: center;
+    font-family: 'Century Gothic';
+    padding-bottom: 10vmin;
+    padding-top: 5vmin;
+    overflow: hidden;
+}
+/*Estilização do formulário, padding, largura, arredondamento de
+bordas e margem centralizando os elementos*/
+form{
+    padding: 3%;
+    width: max-content;
+    border-radius: 26px;
+    margin: 0 auto;
+}
+/*Estilização da imagem, com largura*/
+img{
+    width: 50vmin;
+}
+/*Estilização dos parágrafos que funcionam como Heading Tags 1,
+com tamanho da fonte aumentado e cor da fonte*/
+#h1{
+    font-size: 5.5vmin;
+    color: white;
+}
+/*Estilização dos parágrafos que funcionam como Heading Tags 2,
+com alinhamento do texto à esquerda, tamanho da fonte aumentado,
+cor da fonte e margem para baixo*/
+#h2{
+    text-align: left;
+    font-size: 6vmin;
+    color: #007041;
+    margin-bottom: 5vmin
+}
+/*Estilização dos parágrafos normais 1, com tamanho da fonte um pouco
+aumentado e cor da fonte*/
+#p1{
+    font-size: 2.5vmin;
+    color: white;
+}
+/*Estilização dos parágrafos normais 2, com tamanho da fonte um pouco
+aumentado, cor da fonte e margem para baixo*/
+#p2{
+    font-size: 2.5vmin;
+    color: #007041;
+    margin-bottom: 5vmin;
+}
+/*Estilização dos parágrafos que funcionam como Heading Tags 2,
+com duração da animação e o nome atribuído*/
+#h2{
+    animation-duration: 3s;
+    animation-name: subir;
+}
+/*Estilização da div à esquerda, com duração da animação e 
+o nome atribuído*/
+#div1{
+    animation-duration: 2s;
+    animation-name: subir;
+    padding: 2vmin;
+}
+/*Animação de baixo para cima, aumentando a opacidade*/
+@keyframes subir
+{
+    from
+    {
+        margin-top: 100%;
+        opacity: 0;
+    }
+    to
+    {
+        margin-top: 0%;
+        opacity: 1;
+    }
+}
+/*Estilização do "btn" com função continuar, com cor do plano
+de fundo, cor da fonte, arredondamento e cor das bordas*/
+#btn{
+    background-color: white;
+    color: #007041;
+    border-radius: 6px;
+    border-width: 1px;
+    border-color: rgb(167, 164, 164);
+}
+/*Estilização da div da esquerda, onde se encontram a imagem e
+os textos*/
+#div1
+{
+    width: 50%;
+    float: left;
+}
+/*Estilização da div da direita, onde se encontram missão, visão
+e valores, com largura, posicionamento, e padding*/
+#div2
+{
+    width: 50%;
+    float: right;
+    padding-left: 5vmin;
+    padding-right: 5vmin;
+    margin-top: 5vmin;
+}
+@media (max-width: 600px){
+    #div1, #div2{
+        width: 100vw;
+    }
+    #div2{
+        margin-top: 10vmin;
+    }
+    #p1, #p2{
+        font-size: 1.3em;
+    }
+    body{
+    background: linear-gradient(
+        180deg,
+        #008080 0%,
+        #008080 55%,
+        white 55%,
+        white 120vh
+      );
+    }
+}

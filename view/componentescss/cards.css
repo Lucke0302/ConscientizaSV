@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Raleway', 'sans-serif';
+}
+.card img{
+    width: 60%;
+    margin-top: 5%;
+}
+.card #img3{
+    width: 70%;
+    margin-top: 10%;    
+}
+section{
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    padding-left: 6%;
+    padding-right: 6%;
+    padding-top: 6%;
+}
+.card{
+    display: inline-block;
+    width: 25vw;
+    height: 300px;
+    background-color: rgba(0, 128, 128, 0.7);
+    transition: .5s;
+    padding: 2%;
+    color: white;
+    border-top-right-radius: 8px;
+    border-bottom-left-radius: 8px;
+    /* word-break: break-all; */
+}
+#card1{
+    float: left;
+}
+#card1:hover{
+    background-color: #00A6DF;
+}
+#card2:hover{
+    background-color: rgb(253, 156, 10);
+}
+#card3{
+    float: right;
+}
+#card3:hover{
+    background-color: #c50505;
+}
+.h1{
+    font-size: 5vmin;
+    font-weight: 900;
+}
+#p1, #p2, #p3{
+    margin-top: 5%;
+    font-size: 4vmin;
+    color: transparent;
+    transition: 1s;
+    font-weight: bold;
+}
+.card:hover{
+    height: 420px;    
+    cursor: pointer;
+}
+@media(max-width: 700px){
+    section{
+        padding-left: 15%;        
+        margin-top: 5%;
+    }
+    #card1, #card2, #card3{
+        width: 75vw;
+        height: 22vh;
+        margin: 0;
+        display: flex;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 5vh;
+        flex-wrap: wrap;
+    }
+    .card:hover{
+        height: 35vh;
+    }
+    #card1, #card2, #card3{
+        float: none;
+        justify-content: center;
+        text-align: center;
+    }
+    .card img{
+        width: 40%;
+    }
+    .card #img2{
+        margin-left: 10%;
+    }
+    .card #img3{
+        width: 45%;
+    }
+}

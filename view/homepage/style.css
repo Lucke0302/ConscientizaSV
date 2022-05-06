@@ -1,0 +1,189 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100&display=swap');
+*{
+    font-family: 'Raleway', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+.nav{
+    position: absolute;
+    height: 100vh;
+    background-color: #008080;
+    width: 4vmax;
+    color: white;
+    overflow-x: hidden;
+    transition: 0.5s;
+    margin-right: 96vmax;
+}
+.nav:hover{
+    width: 20vmax;
+    margin-right: 80vmax;
+}
+.nav ul{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding-left: 1vmin;
+    padding-top: 8vmin;
+}
+.nav ul a{
+    text-decoration: none;
+}
+.nav ul li{
+    position: relative;
+    display: flex;
+    font-weight: bold;
+    list-style: none;
+    width: 100%;
+    padding-bottom: 3vh;
+    color: white;
+    transition: 0.27s;
+    font-size: 4vmin;
+    padding-top: 3vmin;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+.nav ul a li:hover{
+    font-size: 4.2vmin;
+}
+.nav ul li .icone{
+    position: relative;
+    display: block;
+    text-align: center;
+}
+.nav ul li .icone ion-icon{
+    z-index: 1;
+}
+.nav ul li .cont{
+    position: relative;
+    display: block;
+    margin-left: 3.3vmin;
+    white-space: nowrap;
+}
+img{
+    width: 90%;
+    margin: 0 auto;
+}
+.rec, .ong, .aju{
+    color: white;
+    text-decoration: none;
+}
+.rec:hover, .aju:hover, .ong:hover{
+    font-size: 1em;
+    color: white;
+}
+#reclamacao{
+    background: linear-gradient(
+        90deg,
+        rgb(209, 96, 21) 0%,
+        rgb(252, 151, 57));
+    border: rgb(209, 96, 21);
+    border-style: solid;
+    border-width: 4px;
+    border-top-right-radius: 8px;
+    border-bottom-left-radius: 8px;
+    color: white;
+    text-decoration: none;
+}
+.rec:hover{
+    text-decoration: underline rgb(250, 165, 67);
+}
+#ongs{
+    background: linear-gradient(
+        90deg,
+        rgb(0, 141, 7) 0%,
+        rgb(0, 199, 149));
+    border: rgb(0, 141, 7);
+    border-style: solid;
+    border-width: 4px;
+    border-top-right-radius: 8px;
+    border-bottom-left-radius: 8px;
+    color: white;
+    text-decoration: none;
+}
+.ong:hover{
+    text-decoration: underline rgb(50, 255, 176);
+}
+#ajudar{
+    background: linear-gradient(
+        90deg,
+        rgb(0, 102, 218) 0%,
+        rgb(0, 156, 218) 100%
+    );
+    border: rgb(0, 102, 218);
+    border-style: solid;
+    border-width: 4px;
+    border-top-right-radius: 8px;
+    border-bottom-left-radius: 8px;
+    color: white;
+    text-decoration: none;
+}
+.aju:hover{
+    text-decoration: underline rgb(50, 156, 255);
+}
+#h1{
+    font-size: 7vmin;
+}
+#p1{
+    font-size: 4.5vmin;
+}
+.list{
+    margin-left: 1vmin;
+}
+#div1{
+    margin-top: 3vmin;
+    margin-bottom: 3vmin;
+    font-size: 7vmin;
+    font-weight: bolder;
+    font-family: "Raleway", sans-serif;
+    text-align: center;
+    font-weight: bold;
+    color: black;
+    transition: 0.5s;
+}
+.container{
+    width: 89vmax;
+    margin-right: 2vmin;
+}
+.body{
+    background: white;
+    transition: 0.5s;
+}
+.body.active{
+    background: #2d2d2d;;
+    transition: 0.5s;
+}
+.btn{
+    width: 100px;
+    height: 40px;
+    border: 2px solid #fff;
+    border-radius: 60px;
+    position: relative;
+    cursor: pointer;
+}
+.btn::before{
+    content: '';
+    position: absolute;
+    width: 35px;
+    height: 35px;
+    background: #fff;
+    border-radius: 50%;
+    top: 50%;
+    left: 1px;
+    transform: translateY(-50%);
+    transition: 0.5s;
+} 
+.btn.active::before{
+    left: 60px;
+    transition: 0.5s;
+}  
+.active{
+    color: white;
+}

@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100&display=swap');
+*{
+   margin: 0;
+   padding: 0; 
+   font-family: 'Raleway', 'sans-serif';
+}
+.menu-icon{
+    position: fixed;
+    font-size: 25px;
+    font-weight: bold;
+    padding: 5px;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    color: #008080;
+    cursor: pointer;
+    transition: all 1s;
+    left: 0;
+    top: 0;
+}
+#chk{
+    display: none;
+}
+.menu{
+    height: 100%;
+    position: fixed;
+    background-color:  #008080;
+    top: 0;
+    overflow: hidden;
+    transition: all 1s;    
+}
+#principal{
+    width: 300px;
+    left: -300px;
+}
+ul{
+    list-style: none;
+}
+ul li a{
+    display: block;
+    font-size: 4vmin;
+    font-weight: bolder;
+    padding: 10px;
+    color: #ccc;
+    text-decoration: none;
+    transition: all 0.2s;
+    margin-bottom: 3vmin;
+}
+ul li a:hover{
+    background-color: white; 
+    color: #008080;   
+    font-size: 4.2vmin;
+}
+.voltar{
+    margin-top: 20px;
+    background-color: #008080;
+    border-left: solid 5px #fff;
+}
+#bg{
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    position: fixed;
+    background-color: rgba(0, 0, 0, .4);
+    display: none;
+}
+#chk:checked ~ #principal{
+    transform: translateX(300px);
+}
+#chk:checked ~ .menu-icon{
+    transform: translateX(300px) rotate(180deg);
+}
+ion-icon{
+    margin-right: 5vmin;
+}
+#conteudo{
+    padding-top: 50px;
+    padding-left: 50px;
+    padding-right: 50px;
+    max-width: 100vw;
+    word-break: break-all;
+}
+@media(max-width: 400px){
+    ul li a{
+        font-size: 5.5vmin;
+    }
+    #principal{
+        width: 250px;
+    }
+    #chk:checked ~ .menu-icon{
+        transform: translateX(250px);
+    }
+}
+#quadrado{
+    width: 500px;
+    height: 500px;
+    background-color: pink;
+    display: none;
+}

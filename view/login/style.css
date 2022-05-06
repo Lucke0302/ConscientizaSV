@@ -1,0 +1,193 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600&display=swap%27');
+
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    background: white;
+    color: #008080;    
+    font-weight: 500;
+    display: flex;
+    min-height: 100vh;
+    min-width: 100vw;
+    padding-top: 25vh;
+}
+
+main {
+    height: 50vh;
+    border-left: solid 4px #008080;
+    background: transparent;
+    width: 60vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-left: 20vw;
+    margin-right: 20vw;
+}
+
+main h1 {
+    color: #008080;
+    font-size: 3rem;
+    margin-bottom: 3rem;
+    text-align: center;
+}
+
+/* main.social-media {
+    display: flex;
+    align-content: center;
+}
+
+main .social-media a {
+    text-decoration: none;
+}
+
+main .social-media img {
+    width: 36px;
+    margin-left: 3rem;
+}
+
+main .social-media a:first-child img {
+    margin-left: 0;
+} */
+
+/* main .alternative {
+    margin-top: 1rem;
+}
+
+main .alternative span {
+    font-size: 1.1rem;
+    font-weight: 400;
+    color: white;
+    position: relative;
+}
+
+main .alternative span::before, main .alternative span::after {
+    position: absolute;
+    content: '';
+    height: 1px;
+    width: 100px;
+    bottom: 50%;
+    right: 50px;
+    background: white;
+}
+
+main .alternative span::after {
+    left: 50px;
+} */
+
+main div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+main div label {
+    display: inline;
+    flex-direction: column;
+}
+
+main div label span {
+    font-size: 1.4rem;
+    margin-top: 2rem;
+    margin-right: 2vw;
+}
+
+main div input, main div button {
+    background: #00a5a5;
+    width: 50vmin;
+    height: 7vmin;
+    padding: 0 0.5rem;
+    margin-top: 1rem;
+    outline: none;
+    color: black;
+    font-size: 1rem;
+    border: 1px solid #040B18;
+    border-radius: 8px;
+}
+
+main div input[type="email"], main div input[type="password"]{
+    border: transparent;
+    border-top-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+    color: white;
+}
+
+main div button {
+    background: #00a5a5;
+    cursor: pointer;
+    width: 50%;
+    margin-top: 2vh;
+    border: none;
+    border-radius: 32px;
+    color: white;
+    font-size: 1.1rem;
+    transition: all .3s ease-in-out;
+}
+
+main .criar{
+    color: white;
+    margin-top: 2vh;
+} 
+
+
+section.images {
+    width: 50vw;
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+    padding: 4rem;
+}
+
+section.images img {
+    width: 100%;
+}
+
+
+/* @media only screen and (min-width: 900px) and (max-width: 1200px) {
+    section.images img {
+        width: 110%;
+    }
+
+    section.images .circle {
+        clip-path: circle(35% at right 80%);
+    }
+} */
+
+/* @media only screen and (max-width: 900px) {
+    section.images {
+        display: none;
+        visibility: hidden;
+    }
+
+    main {
+        width: 100vw;
+    }
+} */
+
+@media only screen and (max-width: 450px) {
+    main h1 {
+        font-size: 2rem;
+    }
+
+    main .alternative span {
+        font-size: 0.8rem;
+    }
+
+    main div label span, main div button {
+        font-size: 1rem;
+    }
+}
+.icon{
+    position: absolute;
+    margin-top: -93vh;
+    margin-left: -95vw;
+}
+ion-icon{
+    color: #008080;
+}
