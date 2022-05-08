@@ -12,7 +12,7 @@
 </head>
 <body>
     <main>
-    <a href="../tipoconta/"><ion-icon size="large" name="arrow-back-outline"></ion-icon></a>
+    <a href="../escolhaorganizacao/" class="icon"><ion-icon size="large" name="arrow-back-outline"></ion-icon></a>
         <h1>CADASTRO - ORGANIZAÇÃO</h1>
         <!-- <div class="social-media">
             <a href="#">

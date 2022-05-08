@@ -5,11 +5,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
     <link rel="shortcut icon" href="../imagens/logo.png">
     <title>Document</title>
 </head>
 <body>
-    <form id='publicar' action="../../controller/publicar/controller.php" method="POST">
+    <form id='publicar' action="" method="POST">
         <p id="h1">Nova Publicação</p>
         <label for='local'>Local: </label>
         <input type='text' name="local" id='local'><br>

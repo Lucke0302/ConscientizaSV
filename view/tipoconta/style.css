@@ -62,12 +62,15 @@ e os formulários*/
 @media (max-width: 600px){
     #div1, #div2{
         width: 100vw;
+        height: 60vh;
     }
     #div1{
+        padding-top: 0;
         margin-top: 5vmin;
         padding-bottom: 5%;
     }
     #div2{
+        padding-top: 10vh;
         height: 50vh;
     }
     #p1, #p2{

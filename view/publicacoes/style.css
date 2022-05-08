@@ -4,6 +4,9 @@
     margin: 0;
     font-family: 'Raleway', 'sans-serif';
 }
+body{    
+    padding-top: 70px;
+}
 #general{
     text-align: center;
     align-items: center;
@@ -19,7 +22,7 @@
     transition: .5s;
     padding: 2%;
     color: white;
-    margin-bottom: 5%;
+    margin-top: 3%;
     border-top-right-radius: 8px;
     border-bottom-left-radius: 8px;
 }

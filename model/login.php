@@ -60,14 +60,13 @@ class Login extends Conexao{
             $select -> bindValue(':email', $this->email);
             $select -> execute();
             $qtlinhas = $select->rowCount();
-            if($qtlinhas<1){
+            if($qtlinhas < 1){
                 $select -> closeCursor();
                 $select = $this->getConexao()->prepare("select cd_pessoa from tb_pessoa where ds_email = :email");
                 $select -> bindValue(':email', $this->email);
                 $select -> execute();
                 $qtlinhas = $select->rowCount();
                 if($qtlinhas < 1){
-                    echo "false";
                 }
                 else{
                     $dados=$select->fetchAll();

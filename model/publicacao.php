@@ -7,20 +7,20 @@ class Publicacao extends Conexao{
     // protected $positivo;
     // protected $negativo;
 
-    public function __construct($id, $conteudo, $org/*, $positivo, $negativo*/)
+    public function __construct($id, $conteudo, $iduser/*, $positivo, $negativo*/)
     {
         $this->id = $id;
         $this->conteudo = $conteudo;
-        $this->org = $org;
+        $this->user = $iduser;
         // $this->positivo = $positivo;
         // $this->negativo = $negativo;
     }
 
     public function setPublicacao(){
         $conexao = $this->getConexao();
-        $publicacao = $conexao -> prepare("insert into tb_publicacao (cd_publicacao, ds_conteudo, cd_organizacao) values (default, :conteudo, :org)");
+        $publicacao = $conexao -> prepare("insert into tb_publicacao (cd_publicacao, ds_conteudo, cd_organizacao) values (default, :conteudo, :user)");
         $publicacao -> bindValue(':conteudo', $this->conteudo);
-        $publicacao -> bindValue(':org', $this->org);
+        $publicacao -> bindValue(':org', $this->user);
         $publicacao -> execute();
         $publicacao -> closeCursor();
         header('location: ../../view/comoajudar/');
@@ -28,11 +28,12 @@ class Publicacao extends Conexao{
 
     public function setReclamacao(){
         $conexao = $this->getConexao();
-        $publicacao = $conexao -> prepare("insert into tb_reclamacao (cd_publicacao, ds_conteudo, cd_organizacao, qt_positivo, qt_negativo) values (default, :conteudo, :org, default, default)");
+        $publicacao = $conexao -> prepare("insert into tb_reclamacao (cd_reclamacao, ds_conteudo, cd_pessoa) values (default, :conteudo, :user)");
         $publicacao -> bindValue(':conteudo', $this->conteudo);
-        $publicacao -> bindValue(':org', $this->org);
+        $publicacao -> bindValue(':user', $this->user);
         $publicacao -> execute();
         $publicacao -> closeCursor();
+        header('location: ../../view/reclamacoes/');
     }
 }
 ?>

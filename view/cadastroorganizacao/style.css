@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600&display=swap%27');
 
 * {
     margin: 0;
@@ -9,29 +9,32 @@
 }
 
 body {
-    background: #008080;
-    color: white;
+    background: white;
+    color: #008080;
     font-weight: 500;
     display: flex;
     min-height: 100vh;
     min-width: 100vw;
-    overflow: hidden;
+    padding-top: 5vh;
 }
 
 main {
-    width: 50vw;
+    height: 90vh;
+    background: transparent;
+    width: 60vw;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    margin-right: 25vw;
-    margin-left: 25vw;
+    margin-left: 20vw;
+    margin-right: 20vw;
+    border-left: solid 4px #008080;
 }
 
 main h1 {
-    color: white;
-    font-size: 2rem;
-    margin-bottom: 1rem;
+    color: #008080;
+    font-size: 3rem;
+    margin-bottom: 3rem;
     text-align: center;
 }
 
@@ -51,9 +54,9 @@ main .social-media img {
 
 main .social-media a:first-child img {
     margin-left: 0;
-} 
+} */
 
-main .alternative {
+/* main .alternative {
     margin-top: 1rem;
 }
 
@@ -62,9 +65,9 @@ main .alternative span {
     font-weight: 400;
     color: white;
     position: relative;
-} */
+}
 
-/* main .alternative span::before, main .alternative span::after {
+main .alternative span::before, main .alternative span::after {
     position: absolute;
     content: '';
     height: 1px;
@@ -90,15 +93,17 @@ main form label {
 }
 
 main form label span {
-    font-size: 1.1rem;
-    margin-top: 2rem;
+    font-size: 1.4rem;
+    margin-top: 0;
+    margin-right: 2vw;
 }
 
 main form input {
-    background: white;
+    background: #00a5a5;
     width: 50vmin;
     height: 7vmin;
     padding: 0 0.5rem;
+    margin-top: 1rem;
     outline: none;
     color: black;
     font-size: 1rem;
@@ -106,48 +111,32 @@ main form input {
     border-radius: 8px;
 }
 
-main form input[type="text"], main form input[type="email"], main form input[type="password"]{
+main form input[type="text"], main form input[type="date"], main form input[type="email"], main form input[type="password"]{
     border: transparent;
     border-top-left-radius: 0px;
     border-bottom-right-radius: 0px;
-    background: #00a5a5;
     color: white;
 }
 
-main form input::placeholder {
-    color: rgba(100%,100%,100%,0.6);
-} 
-
 main form input[type="submit"] {
+    background: #008080;
     cursor: pointer;
     width: 50%;
-    margin-right: 25%;
-    margin-left: 25%;
-    margin-top: 3rem;
+    margin-top: 2vh;
     border: none;
     border-radius: 32px;
-    color: #008080;
+    color: white;
     font-size: 1.1rem;
     transition: all .3s ease-in-out;
 }
-main form input[type="password"]{
-    border: transparent;
-    border-top-left-radius: 0px;
-    border-top-right-radius: 0px;
-    border-bottom-right-radius: 0px;
-    background: #00a5a5;
-    color: white;
-}
-a{
-    position: absolute;
-    margin-top: -93vh;
-    margin-left: -95vw;
-}
-ion-icon{
-    color: white;
-}
 
-/* section.images {
+main .criar{
+    color: white;
+    margin-top: 2vh;
+} 
+
+
+section.images {
     width: 50vw;
     display: flex;
     align-items: flex-end;
@@ -159,8 +148,12 @@ section.images img {
     width: 100%;
 }
 
+main form input::placeholder {
+    color: rgba(100%,100%,100%,0.6);
+} 
 
-@media only screen and (min-width: 900px) and (max-width: 1200px) {
+
+/* @media only screen and (min-width: 900px) and (max-width: 1200px) {
     section.images img {
         width: 110%;
     }
@@ -168,9 +161,9 @@ section.images img {
     section.images .circle {
         clip-path: circle(35% at right 80%);
     }
-}
+} */
 
-@media only screen and (max-width: 900px) {
+/* @media only screen and (max-width: 900px) {
     section.images {
         display: none;
         visibility: hidden;
@@ -193,4 +186,12 @@ section.images img {
     main form label span, main form input[type="submit"] {
         font-size: 1rem;
     }
-} 
+}
+.icon{
+    position: absolute;
+    margin-top: -93vh;
+    margin-left: -95vw;
+}
+ion-icon{
+    color: #008080;
+}

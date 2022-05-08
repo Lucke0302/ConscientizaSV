@@ -3,6 +3,10 @@ include_once('conexao.php');
 
 class Administrador extends Conexao{
 
+    public function getTipo(){
+        echo $_SESSION['tipo'];
+    }
+
     public function getPessoas(){
         $conexao = $this -> getConexao();
         $select = $conexao ->prepare('select * from tb_pessoa');

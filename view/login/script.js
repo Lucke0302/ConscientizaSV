@@ -8,12 +8,7 @@ $(document).on('click', '#button', function(){
         success: function(retorno){
             if(retorno == 'false'){
                 document.getElementById('alertasenha').innerHTML = '';
-                document.getElementById('alertaemail').innerHTML = 'Email inexistente';
-                document.getElementById('alertaemail').style.color = 'Red';
-            }
-            else if(retorno == 'falseS'){
-                document.getElementById('alertaemail').innerHTML = '';
-                document.getElementById('alertasenha').innerHTML = 'Senha incorreta';
+                document.getElementById('alertasenha').innerHTML = 'Login ou senha inválidos';
                 document.getElementById('alertasenha').style.color = 'Red';
             }
             else{

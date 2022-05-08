@@ -13,7 +13,7 @@
 </head>
 <body>
     <main>
-    <a href="../escolhaorganizacao/" class="icon"><ion-icon size="large" name="arrow-back-outline"></ion-icon></a>
+    <a href="../escolhausuario/" class="icon"><ion-icon size="large" name="arrow-back-outline"></ion-icon></a>
         <h1>CADASTRO</h1>
         <!-- <div class="social-media">
             <a href="#">
@@ -38,8 +38,8 @@
             </label>
       
             <label for="cnpj">
-                <span>CPF/CNPJ</span>
-                <input type="text" id="data" name="nasc" autocomplete="off" required>
+                <span>Data de Nascimento</span>
+                <input type="date" id="data" name="nasc" autocomplete="off" required>
             </label>
 
             <label for="email">
