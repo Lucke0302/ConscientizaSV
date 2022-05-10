@@ -1,7 +1,6 @@
 <?php
-session_start();
 error_reporting(0);
-require_once("../../controller/session/controller.php");
+require_once("../../controller/sessionusuario/controller.php");
 ?>
 <!DOCTYPE html>
 <html lang="pt-BR">
@@ -19,11 +18,10 @@ require_once("../../controller/session/controller.php");
 </head>
 <body class="body">
 <?php
-    error_reporting(0);
     include_once('../componentes/menu.php');
 ?>
 <div id="divbemvindo">
-<p id="h1" class="sair">Bem Vindo(a), <?php ?></p>
+<p id="h1" class="sair">Bem Vindo(a), </p>
 <form action="../../controller/encerrarsessao/controller.php">
     <input id="sair" class="sair" type="submit" value="Encerrar sessão">
 </form>
@@ -31,7 +29,7 @@ require_once("../../controller/session/controller.php");
     <input id="sair" class="sair" type="submit" value="Excluir conta">
 </form>
 </div><br>
-<div id="slide">
+<!-- <div id="slide">
     <div class="container" id="email">
         <div id="divemail">
             <p id="email">Clique aqui para alterar email</p>
@@ -42,7 +40,7 @@ require_once("../../controller/session/controller.php");
                 <input type="submit" value="Alterar" id="enviar">
             </form> 
         </div>
-    </div>
+    </div> -->
     <!-- <div class="container" id="senha">
         <div id="divsenha">
             <p id="senha">Clique aqui para alterar a senha</p>

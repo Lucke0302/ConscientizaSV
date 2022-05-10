@@ -9,7 +9,6 @@ class Selecionar extends Conexao{
     }
 
     public function getTipoUsuario(){
-        session_start();
         $conexao = $this->getConexao();
         $select = $conexao -> prepare("select nm_tipo from tb_pessoa where cd_pesssoa = :id");
         $select -> bindValue(':id', $this->id);
@@ -56,10 +55,11 @@ class Selecionar extends Conexao{
         $select = $conexao -> prepare("select ds_nome from tb_pessoa where cd_pessoa = :id");
         $select -> bindValue(':id', $this->id);
         $select -> execute();
-        $result = $select->fetch();
+        $result = $select->fetchAll();
         foreach($result as $row){
             $nome = $row['ds_nome'];
-            echo $nome;
+            $nomeq = explode(' ', $nome);
+            echo "<p id='h1'>".$nomeq[0]."</p>";
         }
     }
 

@@ -12,8 +12,8 @@
 <body>
     <form id='publicar' action="" method="POST">
         <p id="h1">Nova Publicação</p>
-        <label for='local'>Local: </label>
-        <input type='text' name="local" id='local'><br>
+        <!-- <label for='local'>Local: </label>
+        <input type='text' name="local" id='local'><br> -->
         <label for='local'>Conteúdo</label><br>
         <textarea form="publicar" name="conteudo" cols='60' rows='15'></textarea><br>
         <input id="enviar" type="submit" value="Enviar">
