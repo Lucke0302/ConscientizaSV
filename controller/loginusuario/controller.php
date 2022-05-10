@@ -1,5 +1,6 @@
 <?php 
 
+error_reporting(0);
 $email = $_POST['email'];
 $senha = $_POST['senha'];
 
