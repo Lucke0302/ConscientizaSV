@@ -12,7 +12,6 @@ $(document).on('click', '#button', function(){
                 document.getElementById('alertasenha').style.color = 'Red';
             }
             else{
-                window.location.href = "../homepage/";
             }
         }
     });

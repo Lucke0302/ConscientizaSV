@@ -4,10 +4,10 @@ class Conexao{
 
     public function getConexao(){
         $username="root";
-        // $password="root";
+        $password="root";
         try{
             if(is_null($this->pdo)){    
-            $this->pdo = new PDO('mysql:host = localhost; dbname=bd_conscientiza', $username, /*$password*/);
+            $this->pdo = new PDO('mysql:host = localhost; dbname=bd_conscientiza', $username, $password);
                 $this->pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
             }     
         return $this->pdo;   

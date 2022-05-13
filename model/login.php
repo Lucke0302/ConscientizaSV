@@ -26,6 +26,7 @@ class Login extends Conexao{
             $email = $select -> fetchAll();
             if($valido < 1){
                 echo "false";
+                $_SESSION['Logado'] = false;
             }
             else{
                 foreach($email as $row){
@@ -34,6 +35,7 @@ class Login extends Conexao{
                         $_SESSION['Logado'] = true;
                     }
                     else{
+                        $_SESSION['Logado'] = false;
                         echo "false";
                     }
                 }
@@ -72,6 +74,7 @@ class Login extends Conexao{
                     $dados=$select->fetchAll();
                     foreach($dados as $id){
                         $_SESSION['id'] = $id['cd_pessoa'];
+                        header('location: ../../view/homepage/');
                     }
                 }
             }
@@ -79,6 +82,7 @@ class Login extends Conexao{
                 $dados = $select->fetchAll();
                 foreach($dados as $id){
                     $_SESSION['id'] = $id['cd_organizacao'];
+                    header('location: ../../view/homepage/');
                 }
             } 
         }    

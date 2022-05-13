@@ -41,10 +41,10 @@ ul li a{
     font-size: 4vmin;
     font-weight: bolder;
     padding: 10px;
-    color: #ccc;
+    color: white;
     text-decoration: none;
     transition: all 0.2s;
-    margin-bottom: 3vmin;
+    margin-bottom: 3vmin;    
 }
 ul li a:hover{
     background-color: white; 
@@ -71,7 +71,7 @@ ul li a:hover{
 #chk:checked ~ .menu-icon{
     transform: translateX(300px) rotate(180deg);
 }
-ion-icon{
+ion-icon, .icon{
     margin-right: 5vmin;
 }
 #conteudo{

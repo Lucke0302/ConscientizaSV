@@ -17,18 +17,18 @@ require_once("../../controller/sessionusuario/controller.php");
 <title>Perfil</title>
 </head>
 <body class="body">
-<?php
-    include_once('../componentes/menu.php');
-?>
 <div id="divbemvindo">
 <p id="h1" class="sair">Bem Vindo(a), </p>
 <form action="../../controller/encerrarsessao/controller.php">
-    <input id="sair" class="sair" type="submit" value="Encerrar sessão">
+    <input id="sair" class="sair" type="submit" value="Sair">
 </form>
 <form action="../../controller/excluirusuario/controller.php">
     <input id="sair" class="sair" type="submit" value="Excluir conta">
 </form>
 </div><br>
+<?php
+    include_once('../componentes/menu.php');
+?>
 <!-- <div id="slide">
     <div class="container" id="email">
         <div id="divemail">
