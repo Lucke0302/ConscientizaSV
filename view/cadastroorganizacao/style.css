@@ -135,6 +135,9 @@ main .criar{
     margin-top: 2vh;
 } 
 
+main form #resp, #respsenha{
+    color: red;
+}
 
 section.images {
     width: 50vw;

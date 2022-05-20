@@ -7,6 +7,7 @@
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
     <link rel="shortcut icon" href="../imagens/logo.png">
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
     <title>Cadastro - Organização</title>
     <link rel="stylesheet" href="style.css">
 </head>
@@ -39,6 +40,7 @@
             <label for="cpf">
                 <span>CPF/CNPJ:</span>
                 <input type="text" id="cpf" name="cnpj" placeholder="XXXXXXXX0001XX" maxlength="18" required>
+                <p id="resp"></p>
             </label>
 
             <label for="email">
@@ -50,11 +52,13 @@
               <span> Senha:</span>
 
               <input type= "password" id="senha" name="senha" placeholder="*********" minlength="6" maxlength="200" required> 
+              <p id="respsenha"></p>
 
             <input type="submit" value="CRIAR" id="button">
             
 
         </form>
+        <script src="script.js"></script>
     </main>
    
 </body>
