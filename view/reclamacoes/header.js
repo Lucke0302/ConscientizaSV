@@ -20,3 +20,20 @@ else{
     button.style.animation = "none";
 });
 }
+var sla = document.getElementsByClassName('likes');
+$(sla).on('click', function(e){
+    idrec = e.target.id;
+    idsplit = idrec.split('rec');
+    id = idsplit[1];
+    $.ajax({
+        method: "POST",
+        url: "../../controller/like/controller.php",
+        data: {id},
+        success: function(retorno){
+            quant = document.getElementById('quant'+id);
+            likes = document.getElementById('likes'+id);
+            quant.innerHTML = retorno;
+            likes.classList.toggle('ativo');
+        }
+    });
+});
