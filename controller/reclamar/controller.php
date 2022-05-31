@@ -2,7 +2,7 @@
 
 session_start();
 
-$conteudo = $_POST['conteudo'];
+$conteudo = $_POST['input'];
 
 include('../../model/publicacao.php');
 

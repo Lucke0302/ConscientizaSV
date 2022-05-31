@@ -17,6 +17,8 @@
     height: max-content;
     margin-left: 25vw;
     margin-top: 10vh;
+    padding-left: 1vw;
+    padding-right: 1vw;
 }
 label{
     font-family: 'Raleway', 'sans-serif';
@@ -39,7 +41,7 @@ label{
     border-bottom-right-radius: 0px;
     color: white;
 }
-textarea{
+/* textarea{
     font-family: 'Raleway', 'sans-serif';
     font-size: 3vmin;
     font-weight: bold;
@@ -53,7 +55,7 @@ textarea{
     border-top-left-radius: 0px;
     border-bottom-right-radius: 0px;
     color: white; 
-}
+} */
 #enviar{    
     font-family: 'Raleway', 'sans-serif';
     background: #008080;
@@ -77,6 +79,9 @@ textarea{
     color: white;
     font-size: 3vmin;
     font-weight: bold;
+}
+#enviar, #cancelar{
+    margin-top: 5vh;
 }
 @media(max-width:600px){
     #publicar{

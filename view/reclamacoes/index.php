@@ -15,7 +15,7 @@
 </head>
 <body>
     <?php
-        // error_reporting(0);
+        error_reporting(0);
         include_once('../componentes/footer.php');
         include_once('../componentes/header.php');        
         include_once('../componentes/menu.php');

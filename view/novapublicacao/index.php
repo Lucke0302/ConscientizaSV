@@ -6,6 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="style.css">
     <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <link rel="stylesheet" href="jquery.cleditor.css" />
+    <script src="jquery.cleditor.min.js"></script>
+    <script src="jquery.cleditor.js"></script>
     <link rel="shortcut icon" href="../imagens/logo.png">
     <title>Document</title>
 </head>
@@ -15,7 +18,10 @@
         <!-- <label for='local'>Local: </label>
         <input type='text' name="local" id='local'><br> -->
         <label for='local'>Conteúdo</label><br>
-        <textarea form="publicar" name="conteudo" cols='60' rows='15'></textarea><br>
+        <textarea id="input" name="input"></textarea>
+    <script>
+        $(document).ready(function () { $("#input").cleditor(); });
+    </script>
         <input id="enviar" type="submit" value="Enviar">
         <input id="cancelar" type="button" value="Cancelar">
     </div>
