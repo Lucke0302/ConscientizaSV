@@ -23,7 +23,7 @@ else{
 var sla = document.getElementsByClassName('likes');
 $(sla).on('click', function(e){
     idrec = e.target.id;
-    idsplit = idrec.split('rec');
+    idsplit = idrec.split('likes');
     id = idsplit[1];
     $.ajax({
         method: "POST",
