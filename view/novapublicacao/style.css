@@ -41,11 +41,13 @@ label{
     border-bottom-right-radius: 0px;
     color: white;
 }
-/* textarea{
+textarea{
     font-family: 'Raleway', 'sans-serif';
     font-size: 3vmin;
     font-weight: bold;
     resize: none;
+    width: 80%;
+    height: 50vh;
     margin-bottom: 3%;
     background: rgba(0, 128, 128, 0.4);
     padding: 0 0.5rem;
@@ -55,7 +57,7 @@ label{
     border-top-left-radius: 0px;
     border-bottom-right-radius: 0px;
     color: white; 
-} */
+}
 #enviar{    
     font-family: 'Raleway', 'sans-serif';
     background: #008080;

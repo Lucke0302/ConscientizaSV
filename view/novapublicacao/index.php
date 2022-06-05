@@ -19,13 +19,10 @@
         <input type='text' name="local" id='local'><br> -->
         <label for='local'>Conteúdo</label><br>
         <textarea id="input" name="input"></textarea>
-    <script>
-        $(document).ready(function () { $("#input").cleditor(); });
-    </script>
         <input id="enviar" type="submit" value="Enviar">
         <input id="cancelar" type="button" value="Cancelar">
     </div>
-    <?php session_start(); echo"<script>alert('".$_SESSION['id']."')</script>";?>
+    <?php //session_start(); echo"<script>alert('".$_SESSION['id']."')</script>";?>
     <script src="script.js"></script>
 </body>
 </html>

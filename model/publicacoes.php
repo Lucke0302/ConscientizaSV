@@ -97,7 +97,7 @@ class Publicacoes extends Conexao{
     }
     public function PesquisaRec($pesquisa){
         error_reporting(0);
-        $select= $this->getConexao()->prepare("select REC.cd_reclamacao, REC.qt_positivo, REC.ds_conteudo, PES.ds_nome from tb_reclamacao as REC join tb_pessoa as PES on PES.cd_pessoa = REC.cd_pessoa                 where REC.ds_conteudo like :pesquisa order by REC.cd_reclamacao desc");
+        $select= $this->getConexao()->prepare("select REC.cd_reclamacao, REC.qt_positivo, REC.ds_conteudo, PES.ds_nome from tb_reclamacao as REC join tb_pessoa as PES on PES.cd_pessoa = REC.cd_pessoa where REC.ds_conteudo like :pesquisa order by REC.cd_reclamacao desc");
         $select->bindParam(':pesquisa', $pesquisa);
         $select->execute();
         $linhas = $select->rowCount();
