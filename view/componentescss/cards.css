@@ -86,12 +86,12 @@ section{
         text-align: center;
     }
     .card img{
-        width: 40%;
+        width: 20%;
     }
     .card #img2{
         margin-left: 10%;
     }
     .card #img3{
-        width: 45%;
+        width: 30%;
     }
 }

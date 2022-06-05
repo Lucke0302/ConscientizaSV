@@ -23,8 +23,8 @@
             </form>
         </div>
         <div id="div2">
-            <p id="primeira"><a href="../escolhaorganizacao/" id="h2">Conta Corporativa</a></p>
-            <p id="segunda"><a href="../escolhausuario/" id="h2">Conta Pessoa Física</a></p>
+            <p id="primeira"><a href="../escolhaorganizacao/" id="h2">Corporativa</a></p>
+            <p id="segunda"><a href="../escolhausuario/" id="h2">Pessoa Física</a></p>
         </div>
     </div>
 </body>

@@ -58,13 +58,13 @@ class Login extends Conexao{
 
     public function getIdPessoa(){
         if($_SESSION['Logado'] == true){
-            $select = $this->getConexao() -> prepare("select cd_organizacao from tb_organizacao where ds_email = :email");
+            $select = $this->getConexao() -> prepare("select cd_organizacao, nm_tipo from tb_organizacao where ds_email = :email");
             $select -> bindValue(':email', $this->email);
             $select -> execute();
             $qtlinhas = $select->rowCount();
             if($qtlinhas < 1){
                 $select -> closeCursor();
-                $select = $this->getConexao()->prepare("select cd_pessoa from tb_pessoa where ds_email = :email");
+                $select = $this->getConexao()->prepare("select cd_pessoa, nm_tipo from tb_pessoa where ds_email = :email");
                 $select -> bindValue(':email', $this->email);
                 $select -> execute();
                 $qtlinhas = $select->rowCount();
@@ -74,6 +74,7 @@ class Login extends Conexao{
                     $dados=$select->fetchAll();
                     foreach($dados as $id){
                         $_SESSION['id'] = $id['cd_pessoa'];
+                        $_SESSION['tipo'] = $id['nm_tipo'];
                         header('location: ../../view/homepage/');
                     }
                 }
@@ -82,6 +83,7 @@ class Login extends Conexao{
                 $dados = $select->fetchAll();
                 foreach($dados as $id){
                     $_SESSION['id'] = $id['cd_organizacao'];
+                    $_SESSION['tipo'] = $id['mn_tipo'];
                     header('location: ../../view/homepage/');
                 }
             } 

@@ -35,7 +35,7 @@ class Cadastro extends Conexao{
             $cadastro -> bindValue(':nome', $this->nome);
             $cadastro -> bindValue(':nasc', $this->nasc);
             $cadastro -> bindValue(':email', $this->email);
-            $cadastro -> bindValue(':senha', $this->senha);
+            $cadastro -> bindValue(':senha', password_hash( $this->senha, PASSWORD_DEFAULT));
             $cadastro -> bindValue(':tipo', $this->tipo);
             $cadastro -> execute();
             $cadastro -> closeCursor();
