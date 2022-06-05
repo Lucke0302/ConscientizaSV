@@ -18,9 +18,9 @@ class Publicacao extends Conexao{
 
     public function setPublicacao(){
         $conexao = $this->getConexao();
-        $publicacao = $conexao -> prepare("insert into tb_publicacao (cd_publicacao, ds_conteudo, cd_organizacao) values (default, :conteudo, :user)");
-        $publicacao -> bindValue(':conteudo', $this->conteudo);
-        $publicacao -> bindValue(':org', $this->user);
+        $publicacao = $conexao -> prepare("insert into tb_publicacao (cd_publicacao, ds_conteudo, cd_organizacao) values (default, ?, ?)");
+        $publicacao -> bindValue(1, $this->conteudo);
+        $publicacao -> bindValue(2, $this->user);
         $publicacao -> execute();
         $publicacao -> closeCursor();
         header('location: ../../view/comoajudar/');

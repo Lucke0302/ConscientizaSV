@@ -3,7 +3,6 @@ $('form').submit(function(){
     var letras = /([a-zA-Z])/;
     var senha = document.getElementById('senha').value;
     if(senha.length >= 6 && senha.match(numeros) && senha.match(letras)){
-        $("#senha").val();
         document.getElementById('respsenha').innerHTML = "";
         //verificação de cpf:
         var tamanho = document.getElementById("cpf").value;

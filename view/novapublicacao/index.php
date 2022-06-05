@@ -12,7 +12,7 @@
     <link rel="shortcut icon" href="../imagens/logo.png">
     <title>Document</title>
 </head>
-<body>
+<body>    
     <form id='publicar' action="" method="POST">
         <p id="h1">Nova Publicação</p>
         <!-- <label for='local'>Local: </label>
@@ -25,6 +25,7 @@
         <input id="enviar" type="submit" value="Enviar">
         <input id="cancelar" type="button" value="Cancelar">
     </div>
+    <?php session_start(); echo"<script>alert('".$_SESSION['id']."')</script>";?>
     <script src="script.js"></script>
 </body>
 </html>

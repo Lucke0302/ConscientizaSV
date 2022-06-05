@@ -39,7 +39,7 @@ class CadastroOrg extends Conexao{
             $cadastro -> bindValue(':tipo', $this->tipo);
             $cadastro -> execute();
             $cadastro -> closeCursor();
-            header('location: ../../view/loginorg/');
+            header('location: ../../view/login/');
         }    
         else if($this->verificarCadastro() == false){
             echo "<p id='msg'>Usuário já existente para esse endereço de email: ". $this->email. "</p><br>

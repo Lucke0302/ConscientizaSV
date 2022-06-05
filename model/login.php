@@ -82,8 +82,8 @@ class Login extends Conexao{
             else{
                 $dados = $select->fetchAll();
                 foreach($dados as $id){
-                    $_SESSION['id'] = $id['cd_organizacao'];
-                    $_SESSION['tipo'] = $id['mn_tipo'];
+                    $_SESSION['idorg'] = $id['cd_organizacao'];
+                    $_SESSION['tipo'] = $id['nm_tipo'];
                     header('location: ../../view/homepage/');
                 }
             } 

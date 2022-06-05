@@ -1,7 +1,7 @@
 cancelar = document.getElementById('cancelar');
 url = document.referrer.split('view/');
 form = document.getElementById('publicar');
-$(document).ready(function(){    
+$(document).ready(function(){  
     if(url[1] == 'comoajudar/'){
         form.action = '../../controller/publicar/controller.php';    
     }

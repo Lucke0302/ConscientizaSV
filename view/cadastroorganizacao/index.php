@@ -59,6 +59,6 @@
 
         </form>
         <script src="script.js"></script>
-    </main>
-   
+    </main>   
 </body>
+</html>
