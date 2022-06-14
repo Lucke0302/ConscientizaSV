@@ -13,8 +13,8 @@
     <title>Document</title>
 </head>
 <body>    
-    <form id='publicar' action="" method="POST">
-        <p id="h1">Nova Publicação</p>
+    <form id='editar' action="" method="POST">
+        <p id="h1">Editar Publicação</p>
         <!-- <label for='local'>Local: </label>
         <input type='text' name="local" id='local'><br> -->
         <label for='local'>Conteúdo</label><br>

@@ -2,7 +2,7 @@
 
 session_start();
 
-$conteudo = $_POST['input'];
+$conteudo = nl2br($_POST['input']);
 
 include('../../model/publicacao.php');
 
