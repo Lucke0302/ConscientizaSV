@@ -1,23 +1,23 @@
+var nome = document.getElementById('nome');
+var email = document.getElementById('email');
+var idade = document.getElementById('idade');
 $(document).ready(function(){
-  $("#divemail").click(function(){
-    $("#emailnovo").slideToggle("fast");
+  $.ajax({
+    url: "../../controller/getNome/controller.php",
+    success: function(getNome){
+      nome.innerHTML = getNome;
+    }
   });
-  $("#divsenha").click(function(){
-    $("#senhanova").slideToggle("fast");
+  $.ajax({
+    url: "../../controller/getEmail/controller.php",
+    success: function(getEmail){
+      email.innerHTML = getEmail;
+    }
+  });
+  $.ajax({
+    url: "../../controller/getIdade/controller.php",
+    success: function(getIdade){
+      idade.innerHTML = "Idade: "+getIdade;
+    }
   });
 });
-
-const btn = document.querySelector('.btn');
-const body = document.querySelector('body');
-const title = document.querySelector('.title');
-const menu = document.querySelector('#ativo');
-
-
-btn.onclick = function(){
-    this.classList.toggle('active');
-    body.classList.toggle('active');
-    title.classList.toggle('active');
-    menu.classList.toggle('active');
-    h1.classList.toggle('active');
-    sair.classList.toggle('active');
-} 

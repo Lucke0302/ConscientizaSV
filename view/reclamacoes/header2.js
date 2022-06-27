@@ -33,7 +33,9 @@ $(document).ready(function(){
     });
 });
 var sla = document.getElementsByClassName('likes');
+alert(sla.innerHTML);
 $(sla).on('click', function(e){
+    alert('ok');
     idrec = e.target.id;
     idsplit = idrec.split('likes');
     id = idsplit[1];
@@ -46,6 +48,8 @@ $(sla).on('click', function(e){
                 alert("Crie uma conta para impulsionar uma reclamação");
             }
             else{
+                
+                document.body.innerHTML +="<script src='header.js'></script>"
                 quant = document.getElementById('quant'+id);
                 likes = document.getElementById('likes'+id);
                 quant.innerHTML = retorno;

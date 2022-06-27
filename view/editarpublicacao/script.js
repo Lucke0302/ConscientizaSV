@@ -2,9 +2,8 @@ cancelar = document.getElementById('cancelar');
 input = document.getElementById('input');
 form = document.getElementById('editar');
 $(document).ready(function(){
-    var urlAtual = window. location. href;
-    var urlClass = new URL(urlAtual);
-    var id = urlClass.searchParams.get("nome");
+    idsplit = document.URL.split('?id=');
+    id = idsplit[1];
     $.ajax({
         url: "../../controller/tipo/controller.php",
         success: function(retorno){
@@ -19,6 +18,7 @@ $(document).ready(function(){
             }
         }
     });
+
     $.ajax({
         url: "../../controller/buscarpublicacao/controller.php",
         data: {id},

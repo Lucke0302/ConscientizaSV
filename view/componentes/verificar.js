@@ -1,10 +1,10 @@
 var input = document.querySelector("#search");
+var body = document.querySelectorAll("body");
 $(document).ready(function(){
-    var botao = document.getElementById("publicar");
-    
-if(document.URL == 'http://localhost/ConscientizaSV/view/publicacoes/'){
-    input.placeholder = "Pesquise uma ONG";
-}
+    var botao = document.getElementById("publicar");    
+    if(document.URL == 'http://localhost/ConscientizaSV/view/publicacoes/'){
+        input.placeholder = "Pesquise uma ONG";
+    }
     $.ajax({
         url: '../../controller/session/controller.php',
         success: function(retorno){
@@ -25,25 +25,26 @@ $(input).on('click', function(){
         var url = document.URL;
         var local = url.split('view');
         if(local[1] == '/publicacoes/' || local[1] == '/comoajudar/'){
-            if(pesquisa.length >2){
+            if(e.key == "Enter"){
                 $.ajax({
                     method: "POST",
                     data:{pesquisa},
                     url: '../../controller/pesquisapub/controller.php',
                     success: function(publis){
                         section.innerHTML = publis;
+                        body.innerHTML += "<script src='header.js'></script>";
                     }
                 });
             }  
         }
         else if(local[1] == '/reclamacoes/'){
-            if(pesquisa.length >2){
+            if(e.key == "Enter"){
                 $.ajax({
                     method: "POST",
                     data:{pesquisa},
                     url: '../../controller/pesquisarec/controller.php',
                     success: function(publis){
-                        section.innerHTML = publis;
+                        section.innerHTML = publis + " <script src='header2.js'></script>";
                     }
                 });
             }  

@@ -3,7 +3,7 @@
     <label for="chk" class="menu-icon">&#9776;</label>
     <nav class="menu" id="principal">
         <ul>
-            <li><a href="" class="voltar"><ion-icon name="chevron-back-outline"></ion-icon>Voltar</a></li>
+            <li><a href="../homepage/"><img id="logo" src="../imagens/logo.png" alt="Logo Conscientizasv"></a></li>
             <li><a href="../homepage/"><ion-icon name="home-outline"></ion-icon>Início</a></li>
             <li><a href="../sobre/"><ion-icon name="information-circle-outline"></ion-icon>Sobre</a></li>
             <li><a href="../contato/"><ion-icon name="call-outline"></ion-icon>Contato</a></li>

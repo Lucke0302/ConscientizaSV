@@ -57,9 +57,8 @@ class Selecionar extends Conexao{
         $select -> execute();
         $result = $select->fetchAll();
         foreach($result as $row){
-            $nome = $row['ds_nome'];
-            $nomeq = explode(' ', $nome);
-            echo "<p id='h1'>".$nomeq[0]."</p>";
+            $nome = $row['ds_nome']; 
+            echo $nome;           
         }
     }
 
@@ -102,6 +101,30 @@ class Selecionar extends Conexao{
                 return true;
             }
         } 
+    }
+
+    public function getNome(){
+        $select = $this->getConexao()->prepare("select ds_nome from tb_pessoa where cd_pessoa = :id");
+        $select -> bindValue(':id', $this->id);
+        $select -> execute();
+        $data = $select -> fetch();
+        echo $data['ds_nome'];
+    }
+
+    public function getEmail(){
+        $select = $this->getConexao()->prepare("select ds_email from tb_pessoa where cd_pessoa = :id");
+        $select -> bindValue(':id', $this->id);
+        $select -> execute();
+        $data = $select -> fetch();
+        echo $data['ds_email'];
+    }
+
+    public function getIdade(){
+        $select = $this->getConexao()->prepare("select sfIdadeUsuario(?) as idade;");
+        $select -> bindValue(1, $this->id);
+        $select -> execute();
+        $data = $select -> fetch();
+        echo $data['idade'];
     }
 }
 ?>

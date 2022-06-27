@@ -8,24 +8,25 @@ require_once("../../controller/sessionusuario/controller.php");
 <meta charset="UTF-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
 <link rel="stylesheet" type="text/css" href="style.css">
 <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
 <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 <link rel="shortcut icon" href="../imagens/logo.png">
 <title>Perfil</title>
 </head>
-<body class="body">
-<div id="divbemvindo">
-<p id="h1" class="sair">Bem Vindo(a), </p>
-<form action="../../controller/encerrarsessao/controller.php">
-    <input id="sair" class="sair" type="submit" value="Sair">
-</form>
-<form action="../../controller/excluirusuario/controller.php">
-    <input id="sair" class="sair" type="submit" value="Excluir conta">
-</form>
-</div><br>
+<div class="perfil">
+        <p id="nome">
+        </p>
+        <p id="email">
+        </p>
+        <p id="idade">
+        </p>  
+    </div>
+    <div id="acoes">   
+        <!-- <a href="../minhasrecs/">--><a><div class="recs">Editar</div></a><a href="../minhasreclamacoes/"><div class="recs">Minhas reclamações</div></a>  
+    </div>    
+    <script src="script.js"></script>
 <?php
     include_once('../componentes/menu.php');
 ?>
