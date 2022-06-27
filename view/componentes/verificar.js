@@ -1,5 +1,10 @@
+var input = document.querySelector("#search");
 $(document).ready(function(){
     var botao = document.getElementById("publicar");
+    
+if(document.URL == 'http://localhost/ConscientizaSV/view/publicacoes/'){
+    input.placeholder = "Pesquise uma ONG";
+}
     $.ajax({
         url: '../../controller/session/controller.php',
         success: function(retorno){
@@ -13,9 +18,8 @@ $(document).ready(function(){
         }
     }); 
 });
-var input = document.querySelector("#search");
 $(input).on('click', function(){
-    $(input).keypress(function(){     
+    $(input).keypress(function(e){     
         var section = document.getElementById("publicacoes");
         var pesquisa = input.value;  
         var url = document.URL;

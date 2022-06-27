@@ -11,7 +11,7 @@
     <link rel="shortcut icon" href="../imagens/logo.png">  
     <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
     <link rel="stylesheet" type="text/css" href="../componentescss/header.css">
-    <title>Document</title>
+    <title>Minhas Reclamações</title>
 </head>
 <body>
     <?php

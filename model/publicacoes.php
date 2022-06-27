@@ -92,7 +92,7 @@ class Publicacoes extends Conexao{
             } 
         } 
         else{
-            echo "Não foi encontrado nenhum resultado para '".$devolutiva[0]."'.";
+            echo "Não foi encontrado nenhum resultado para '".$devolutiva[1]."'.";
         }
     }
     public function PesquisaRec($pesquisa){
@@ -138,7 +138,7 @@ class Publicacoes extends Conexao{
             } 
         } 
         else{
-            echo "Não foi encontrado nenhum resultado para '".$devolutiva[0]."'.";
+            echo "Não foi encontrado nenhum resultado para '".$devolutiva[1]."'.";
         }
     }
     public function MinhasReclamacoes(){
