@@ -2,6 +2,9 @@ cancelar = document.getElementById('cancelar');
 input = document.getElementById('input');
 form = document.getElementById('editar');
 $(document).ready(function(){
+    var urlAtual = window. location. href;
+    var urlClass = new URL(urlAtual);
+    var id = urlClass.searchParams.get("nome");
     $.ajax({
         url: "../../controller/tipo/controller.php",
         success: function(retorno){
@@ -14,6 +17,14 @@ $(document).ready(function(){
             else{
                 window.location.href = '../homepage/';
             }
+        }
+    });
+    $.ajax({
+        url: "../../controller/buscarpublicacao/controller.php",
+        data: {id},
+        method: "POST",
+        success: function (retorno){
+            input.innerHTML = retorno;
         }
     });
 });

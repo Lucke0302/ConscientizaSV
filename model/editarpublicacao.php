@@ -11,7 +11,7 @@ class UpdatePost extends Conexao{
         $this->id = $id;
         $this->conteudo = $conteudo;
     }   
-
+    
     public function EditarReclamacao(){
         $conexao = $this->getConexao();
         $update = $conexao -> prepare("update from tb_reclamacao set ds_conteudo = :conteudo where cd_publicacao = :id ");
