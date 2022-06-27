@@ -14,11 +14,12 @@ class UpdatePost extends Conexao{
     
     public function EditarReclamacao(){
         $conexao = $this->getConexao();
-        $update = $conexao -> prepare("update from tb_reclamacao set ds_conteudo = :conteudo where cd_publicacao = :id ");
+        $update = $conexao -> prepare("update tb_reclamacao set ds_conteudo = :conteudo where cd_reclamacao = :id ");
         $update -> bindValue(':id', $this->id);
         $update -> bindValue(':conteudo', $this->conteudo);
         $update -> execute();
         $update -> closeCursor();
+        header('Location: ../../view/minhasreclamacoes/');
     }
 }
 ?>

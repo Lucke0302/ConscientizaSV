@@ -18,7 +18,6 @@ $(document).ready(function(){
             }
         }
     });
-
     $.ajax({
         url: "../../controller/buscarpublicacao/controller.php",
         data: {id},

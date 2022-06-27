@@ -10,12 +10,13 @@
     <title>Document</title>
 </head>
 <body>    
-    <form id='editar' action="" method="POST">
+    <form id='editar' action="../../controller/editarreclamacao/controller.php" method="POST">
         <p id="h1">Editar Publicação</p>
         <!-- <label for='local'>Local: </label>
         <input type='text' name="local" id='local'><br> -->
         <label for='local'>Conteúdo</label><br>
-        <textarea id="input" name="input"></textarea>
+        <input type="hidden" name="id" value="<?php echo $_GET['id']?>">
+        <textarea id="input" name="conteudo"></textarea>
         <input id="enviar" type="submit" value="Enviar">
         <input id="cancelar" type="button" value="Cancelar">
     </div>

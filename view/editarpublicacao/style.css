@@ -85,6 +85,10 @@ textarea{
 #enviar, #cancelar{
     margin-top: 5vh;
 }
+#editar{
+    margin-left: 2%;
+    text-align: center;
+}
 @media(max-width:600px){
     #publicar{
         width: 90vw;
