@@ -12,6 +12,13 @@ $(document).ready(function(){
         form.action = '../../controller/reclamar/controller.php';    
     }
 })
+$('form').submit(function(){
+    cont = document.getElementById('input').value;
+    if(cont.length == 0){
+        document.getElementById('escreva').innerHTML = "Escreva o que há em mente";
+        return false;
+    }
+});
 cancelar.addEventListener('click', function(){
     window.location.href = document.referrer;
 });

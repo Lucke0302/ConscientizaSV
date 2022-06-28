@@ -85,6 +85,12 @@ textarea{
 #enviar, #cancelar{
     margin-top: 5vh;
 }
+#escreva{    
+    font-family: 'Raleway', 'sans-serif';
+    font-size: 3vmin;
+    font-weight: bolder;
+    color: #008080
+}
 @media(max-width:600px){
     #publicar{
         width: 90vw;

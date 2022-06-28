@@ -18,6 +18,7 @@
         <!-- <label for='local'>Local: </label>
         <input type='text' name="local" id='local'><br> -->
         <label for='local'>Conteúdo</label><br>
+        <p id="escreva"></p>
         <textarea id="input" name="input"></textarea>
         <input id="enviar" type="submit" value="Enviar">
         <input id="cancelar" type="button" value="Cancelar">
