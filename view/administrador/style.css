@@ -1,36 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Raleway', 'sans-serif';
+}
 body{
-    font-size: 3vmin;
-    padding-left: 5%;
+    padding-left: 3vw;
+    padding-top: 2.5vh;
+    overflow-y: hidden;
 }
 table{
     color: #008080;
-    font-size: 4vmin;
     border-top: solid 2px #008080;
     border-collapse: collapse;
     border-radius: 4px;
     width: max-content;
+    margin-left: -5%;    
 }
 td, tr{
+    width: 18vw;
     padding: 1.5vmin;
     border-right: solid 2px #008080;
 }
-#enviar{
-    background-color: dodgerblue;
+.bolinha{
+    height: 120px;
+    width: 200px;
+    background-color: #008080;
+    color: white;
+    display: block;
+    font-weight: bolder;
+    font-size: 5vmin;
+    border-radius: 100%;
+    text-align: center;
+    padding-top: 80px;
+}
+.tudo{
+    display: inline-block;    
+    margin-left: 5%;
+}
+.conteudo{
+    width: 65%;
+    height: 90vh;
+    font-size: 2.4vmin;
+    font-weight: bold;
+    margin-left: 24vw;
+    /* float: right; */
+    display: inline-block;
+    margin-top: -50%;
+    vertical-align: middle;
+    border-radius: 8px;
+    border: 1px gray solid;
+    overflow: scroll;
+}
+.buttons{  
+    background: linear-gradient(135deg, rgba(0, 128, 128, 1), rgba(0, 128, 128, 0.9), rgba(0, 128, 128, 1));
+    width: 20%;
+    height: 90vh;
+    padding: 1%;
     color: white;
     border-radius: 8px;
-    border-color: transparent;
+    border: 1px gray solid;
+    overflow: hidden;
+    display: inline-block;
 }
-
-#texto{
-    border-color: #008080;
-    border-width: 2px;
-    border-radius: 8px;
-    background-color: transparent;
-}
-form{
-    width: max-content;
-    margin-bottom: 4%;
-}
-select, #enviar{
+.cat{
     font-size: 3vmin;
+    padding-left: 20px;
+    height: 10vh;
+    margin-bottom: 2.5%;
+    border-radius: 8px;
+    transition: 0.2s;    
+    margin-left: 5%;
+}
+.texto{
+    vertical-align: middle;
+}
+#cat1:hover, #cat2:hover, #cat3:hover, #cat4:hover, #cat5:hover{
+    background: rgba(255, 255, 255, 0.1);
+    cursor: pointer;
+}
+.button{
+    background-color: #008080;
+    color: white;
+    border-radius: 8px;
+    padding: 5px;
+    font-size: 2vmin;
+}
+.button:hover{
+    cursor: pointer;
+}
+label{
+    border-radius: 4px;
+    margin-left: 10px;
+}
+.label{
+    color: #008080;
+    display: block;
+}
+#linha{
+    height: 1vh;
+    position: absolute;
+    margin-top: 45vh;
+    margin-left: -21vw;
+    background-color: rgba(1, 116, 116, 1);
+    width: 88vh;
+    border-radius: 4px;
+    transform: rotate(270deg);
+}
+#linha::after{
+    display: block;
+    content: "";
+    width: 30px;
+    height: 30px;
+    border-radius: 100%;
+    background-color: rgba(1, 116, 116, 1);
+    margin-left: -.2vw;
+    margin-top: -1.6vh;
 }
