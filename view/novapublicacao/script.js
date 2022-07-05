@@ -14,8 +14,8 @@ $(document).ready(function(){
 })
 $('form').submit(function(){
     cont = document.getElementById('input').value;
-    if(cont.length == 0){
-        document.getElementById('escreva').innerHTML = "Escreva o que há em mente";
+    if(cont.length <= 5){
+        document.getElementById('escreva').innerHTML = "Escreva o que há em mente.";
         return false;
     }
 });

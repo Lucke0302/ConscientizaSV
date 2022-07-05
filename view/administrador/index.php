@@ -21,14 +21,13 @@ require_once("../../controller/administrador/controller.php");
 </head>
 <body>
     <div class="buttons">
-        <div id = linha></div>
         <div class="cat" id="cat1">
             <p class="texto">Total de Publicações e Reclamações hoje</p>
         </div>
         <div class="cat" id="cat2">
             <p class="texto">Total de Cadastros hoje</p>
         </div>
-        <div style="visibility: hidden; height: 0px;" class="cat" id="cat3">
+        <div style="visibility: hidden; height: 0px; display:none;" class="cat" id="cat3">
             <p class="texto">Total de Logins hoje</p>
         </div>
         <div class="cat" id="cat4">

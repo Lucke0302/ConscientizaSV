@@ -117,3 +117,27 @@ label{
     margin-left: -.2vw;
     margin-top: -1.6vh;
 }
+@media (max-width:600px){
+    *{
+        font-size: 10px;
+    }
+    .cat{
+        max-width: 30%;
+        min-height: 30px;
+        display: inline-block;        
+    }
+    .buttons{
+        height: 90%;
+        width: 90%;
+    }
+    .conteudo{
+        display: block;
+        margin: 0;
+        height: 250px;
+    }
+    .bolinha{
+        width: 70px;
+        height: 50px;
+        padding-top: 20px;
+    }
+}

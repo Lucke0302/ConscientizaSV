@@ -24,7 +24,7 @@ require_once("../../controller/sessionusuario/controller.php");
         </p>  
     </div>
     <div id="acoes">   
-        <!-- <a href="../minhasrecs/">--><a><div class="recs">Editar</div></a><a href="../minhasreclamacoes/"><div class="recs">Minhas reclamações</div></a>  
+        <!-- <a href="../minhasrecs/">--><a href="../minhasreclamacoes/"><div class="recs">Minhas reclamações</div></a>  
     </div>    
     <script src="script.js"></script>
 <?php

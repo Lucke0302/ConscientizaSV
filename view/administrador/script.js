@@ -64,7 +64,7 @@ setInterval(function(){
                                 var pesquisa = search.value;  
                                 if(pesquisa.length >= 3){
                                         $.ajax({
-                                                url: "pesquisa.php",
+                                                url: "../../controller/pesquisa/controller.php",
                                                 method: "POST",
                                                 data: {pesquisa},
                                                 success: function(retorno){
@@ -88,7 +88,7 @@ setInterval(function(){
                 idsplit = idpes.split('pes');
                 id = idsplit[1];
                 $.ajax({
-                        url: "mudartipo.php",
+                        url: "../../controller/mudartipo/controller.php",
                         method: "POST",
                         data: {id},
                         success: function(retorno){

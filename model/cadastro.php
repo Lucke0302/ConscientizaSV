@@ -42,8 +42,8 @@ class Cadastro extends Conexao{
             header('location: ../../view/login/');
         }    
         else if($this->verificarCadastro() == false){
-            echo "<p id='msg'>Usuário já existente para esse endereço de email: ". $this->email. "</p><br>
-                  <button onclick='../view/cadastro/'>Voltar para o cadastro</button>";
+            echo "<link rel='stylesheet' type='text/css' href='../../view/administrador/style.css'><body style='text-align: center; font-size: 6vmin; color: #008080; font-weight: bolder;' ><p id='msg' >Usuário já existente para esse endereço de email: ". $this->email. "</p><br>
+                  <a href='../../view/cadastro/'><button style='padding: 10px; font-size:3vmin; border-radius: 8px; font-weight: bold; cursor: pointer;'>Voltar para o cadastro</button></a></body>";
         }
     }
 }
